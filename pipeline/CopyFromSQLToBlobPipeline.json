@@ -53,22 +53,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Wait for Seconds",
-				"type": "Wait",
-				"dependsOn": [
-					{
-						"activity": "CopyFromSQLToBlob",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 1
-				}
 			}
 		],
 		"annotations": [],
